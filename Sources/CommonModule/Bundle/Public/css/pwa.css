@@ -1,0 +1,18 @@
+@media (display-mode: fullscreen) {
+    
+}
+
+@media (display-mode: standalone) {
+    
+}
+
+@media (max-width: 599px) and (display-mode: standalone) {
+    
+    @supports (-webkit-overflow-scrolling: touch) {
+    
+    }
+
+    @supports not (-webkit-overflow-scrolling: touch) {
+
+    }
+}

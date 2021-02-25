@@ -26,7 +26,6 @@ body, .bg-1 {
     color: var(--text-color-3);
 }
 a {
-    transition: 0.2s;
     text-decoration: none;
 }
 a:link {
@@ -46,7 +45,7 @@ a:active {
 hr {
     border: none;
     border-bottom: 2px solid var(--bg-color-2);
-    margin: var(--base-unit-xl) 0;
+    margin: var(--unit-2) 0;
 }
 h1, h2, h3, h4, h5, h6 {
     color: var(--text-color-3);
@@ -56,7 +55,7 @@ h1, .h1 {
     line-height: var(--line-height-1);
 }
 * + h1, * + .h1 {
-    margin-top: 4.5rem;
+    margin-top: var(--unit-1);
 }
 
 h2, .h2 {
@@ -64,97 +63,79 @@ h2, .h2 {
     line-height: var(--line-height-2);
 }
 * + h2, * + .h2 {
-    margin-top: 3rem;
+    margin-top: var(--unit-2);
 }
 h3, .h3 {
     font-size: var(--font-size-3);
     line-height: var(--line-height-3);
 }
 * + h3, * + .h3 {
-    margin-top: 3rem;
+    margin-top: var(--unit-2);
 }
 h4, .h4 {
     font-size: var(--font-size-4);
     line-height: var(--line-height-4);
 }
 * + h4, * + .h4 {
-    margin-top: 3rem;
+    margin-top: var(--unit-2);
 }
 h5, .h5 {
     font-size: var(--font-size-5);
     line-height: var(--line-height-5);
 }
 * + h5, * + .h5 {
-    margin-top: 3rem;
+    margin-top: var(--unit-2);
 }
 h6, .h6 {
     font-size: var(--font-size-6);
     line-height: var(--line-height-6);
 }
 * + h6, * + .h6 {
-    margin-top: 1.5rem;
+    margin-top: var(--unit-3);
 }
 p, .p {
     font-size: var(--font-size);
     line-height: var(--line-height);
-    margin-bottom: 1.5rem;
+    margin-bottom: var(--unit-3);
 }
 * + p, * + .p {
-    margin-top: 1.5rem;
+    margin-top: var(--unit-3);
 }
 pre, .small {
     font-size: var(--font-size-1);
     line-height: var(--line-height-1);
 }
 main {
-    padding: var(--base-unit);
-    padding-bottom: var(--base-unit-xxl);
-}
-.full-height {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-.vertical-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: var(--unit);
+    padding-bottom: var(--unit-1);
 }
 section {
-    margin-bottom: var(--base-unit);
+    margin-bottom: var(--unit);
 }
-.lead > * {
-    margin-top: 0;
-}
-.lead  {
-    margin: var(--base-unit-xxl) 0;
-}
-
 input, textarea, select, button, input[type=reset], input[type=submit], fieldset {
     display: block;
     font: inherit;
-    line-height: inherit;
+    line-height: inherit);
     box-sizing: border-box;
-    transition: 0.2s;
-    padding: var(--base-unit-xs) var(--base-unit-s);
     border: none;
-    border-radius: var(--base-unit-xs);
+    padding: var(--unit-5) var(--unit-4);
+    border-radius: var(--unit-5);
 }
 fieldset {
-    padding: var(--base-unit);
-    margin-bottom: var(--base-unit-xl);
+    padding: var(--unit);
+    margin-bottom: var(--unit-2);
     border: 2px solid var(--bg-color-2);
 }
 fieldset legend {
-    padding: 0 var(--base-unit-xs);
+    padding: 0 var(--unit-5);
 }
 input[type=radio], input[type=checkbox] {
     display: inline-block;
-    padding: var(--base-unit-s);
+    padding: var(--unit-4);
     position: relative;
     vertical-align: text-top;
     cursor: pointer;
-    margin-right: var(--base-unit-xs);
+    margin-right: var(--unit-5);
 }
 input[type="checkbox"], input[type="checkbox"] + label, input[type="radio"], input[type="radio"] + label {
     cursor: pointer;
@@ -166,22 +147,22 @@ input[type=radio]:checked:after, input[type=checkbox]:checked:after {
     content: "";
     display: block;
     position: absolute;
-    top: var(--base-unit-xs);
-    left: var(--base-unit-xs);
-    width: var(--base-unit-s);
-    height: var(--base-unit-s);
+    top: var(--unit-5);
+    left: var(--unit-5);
+    width: var(--unit-4);
+    height: var(--unit-4);
 }
 input[type=checkbox]:checked:after {
-    border-radius: var(--base-unit-xss);
+    border-radius: var(--unit-6);
 }
 button, input[type=reset], input[type=submit], .button {
     cursor: pointer;
     border: none;
-    padding: var(--base-unit-xs) var(--base-unit-l);
+    padding: var(--unit-5) var(--unit-2);
 }
 .button {
     display: inline-block;
-    border-radius: var(--base-unit-xs);
+    border-radius: var(--unit-5);
 }
 input[type=file] {
     font-size: 16px;
@@ -199,7 +180,7 @@ select:not([multiple]) {
     background-size: 0.25rem 0.25rem, 0.25rem 0.25rem;
 }
 textarea {
-    font: inherit;
+    font: inherit);
     display: block;
     resize: none;
 }
@@ -222,9 +203,9 @@ tr {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
     align-items: center;
-    border-radius: var(--base-unit-xs);
-    margin: var(--base-unit-xs) 0;
-    padding: var(--base-unit-xs);
+    border-radius: var(--unit-5);
+    margin: var(--unit-5) 0;
+    padding: var(--unit-5);
 }
 
 .container {
@@ -235,25 +216,13 @@ tr {
     margin-left: auto;
     margin-right: auto;
 }
-.margin {
-    margin: var(--base-unit);
-}
-.margin-bottom {
-    margin-bottom: var(--base-unit);
-}
-.padding {
-    padding: var(--base-unit);
-}
-.padding-bottom {
-    padding-bottom: var(--base-unit);
-}
 
 .grid-2,
 .grid-221,
 .grid-321 {
     display: grid;
-    column-gap: var(--base-unit);
-    row-gap: var(--base-unit);
+    column-gap: var(--unit);
+    row-gap: var(--unit);
 }
 .grid-2 > *, .grid-221 > *, .grid-321 > * {
     grid-column: span 1;
@@ -271,7 +240,7 @@ tr {
 }
 @media screen and (min-width: 600px) {
     tbody tr {
-        margin: var(--base-unit-xs) 0;
+        margin: var(--unit-5) 0;
     }
     .grid-221, .grid-321 {
         grid-template-columns: repeat(2, 1fr);

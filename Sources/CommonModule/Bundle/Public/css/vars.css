@@ -29,6 +29,7 @@
     --gray-color: #838388;
 
     --font-size-base: 1rem;
+
     --font-size: 1rem;
     --font-size-1: 2.25rem;
     --font-size-2: 1.75rem;
@@ -38,6 +39,7 @@
     --font-size-6: 0.875rem;
 
     --line-height-base: 1.5rem;
+
     --line-height: 1.5rem;
     --line-height-1: 3rem;
     --line-height-2: 2.5rem;
@@ -48,13 +50,13 @@
 
     --max-width: 640px;
 
-    --base-unit-xxs: 0.125rem;
-    --base-unit-xs: 0.25rem;
-    --base-unit-s: 0.5rem;
-    --base-unit: 1rem;
-    --base-unit-l: 2rem;
-    --base-unit-xl: 3rem;
-    --base-unit-xxl: 4rem;
+    --unit: 1rem;
+    --unit-1: 3rem;
+    --unit-2: 2rem;
+    --unit-3: 1.5rem;
+    --unit-4: 0.5rem;
+    --unit-5: 0.25rem;
+    --unit-6: 0.125rem;
 }
 @media screen and (max-width: 599px) {
     
@@ -92,7 +94,7 @@
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-color: #121212;
+        --bg-color: #1c1c1c;
         --bg-color-1: #000000;
         --bg-color-2: #2f2f2f;
         --bg-color-3: #404040;

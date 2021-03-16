@@ -23,16 +23,8 @@ final class CommonModule: ViperModule {
     func cssHook(args: HookArguments) -> [[String: Any]] {
         [
             [
-                "name": "vars",
+                "name": "peacock",
                 "priority": 900,
-            ],
-            [
-                "name": "reset",
-                "priority": 800,
-            ],
-            [
-                "name": "nav",
-                "priority": 700,
             ],
         ]
     }
